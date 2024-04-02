@@ -4,11 +4,13 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
+
 (function () {
   "use strict";
+  const url = "./assets/json/";
+
   function getData(sectionName) {
     if (sectionName == "#home") {
-      // var homeData = await readData("home");
       fetch(url + "home.json")
         .then((response) => {
           if (!response.ok) {
