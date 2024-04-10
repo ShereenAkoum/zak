@@ -21,10 +21,34 @@
         .then((data) => {
           var homeData = data.info;
           select(".firstName").textContent = homeData.firstName;
-          select(".facebook").setAttribute("href", homeData.facebook);
-          select(".twitter").setAttribute("href", homeData.twitter);
-          select(".instagram").setAttribute("href", homeData.instagram);
-          select(".linkedin").setAttribute("href", homeData.linkedin);
+          var facebook = document.querySelectorAll(".facebook");
+          facebook.forEach(function (item) {
+            item.setAttribute("href", homeData.facebook);
+          });
+          var youtube = document.querySelectorAll(".youtube");
+          youtube.forEach(function (item) {
+            item.setAttribute("href", homeData.youtube);
+          });
+          var instagram = document.querySelectorAll(".instagram");
+          instagram.forEach(function (item) {
+            item.setAttribute("href", homeData.instagram);
+          });
+          var tiktok = document.querySelectorAll(".tiktok");
+          tiktok.forEach(function (item) {
+            item.setAttribute("href", homeData.tiktok);
+          });
+          select(".dob").textContent = homeData.dob;
+          var phoneNumbers = document.querySelectorAll(".phoneNumber");
+          phoneNumbers.forEach(function (item) {
+            item.textContent = homeData.phone;
+          });
+          var email = document.querySelectorAll(".email");
+          email.forEach(function (item) {
+            item.textContent = homeData.email;
+          });
+          select(".degree").textContent = homeData.degree;
+          select(".country").textContent = homeData.country;
+          select(".freelance").textContent = homeData.freelance;
         })
         .catch((error) => {
           console.error("There was a problem with the fetch operation:", error);
