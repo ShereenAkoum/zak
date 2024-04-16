@@ -51,6 +51,9 @@
           select(".freelance").textContent = homeData.freelance;
           select(".learnMoreAboutMe").textContent = homeData.learnMoreAboutMe;
           select(".position").textContent = homeData.position;
+          select(".mainDesc1").textContent = homeData.mainDesc1;
+          select(".mainDesc2").textContent = homeData.mainDesc2;
+          select(".mainDesc3").textContent = homeData.mainDesc3;
         })
         .catch((error) => {
           console.error("There was a problem with the fetch operation:", error);
