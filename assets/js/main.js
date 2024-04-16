@@ -49,6 +49,8 @@
           select(".degree").textContent = homeData.degree;
           select(".country").textContent = homeData.country;
           select(".freelance").textContent = homeData.freelance;
+          select(".learnMoreAboutMe").textContent = homeData.learnMoreAboutMe;
+          select(".position").textContent = homeData.position;
         })
         .catch((error) => {
           console.error("There was a problem with the fetch operation:", error);

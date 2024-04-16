@@ -1193,3 +1193,7 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+.firstDesc span {
+  border-bottom: 2px solid #ff9800;
+}
