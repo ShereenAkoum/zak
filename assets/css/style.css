@@ -46,7 +46,7 @@ a {
 }
 
 a:hover {
-  color: #35e888;
+  color: #5e5e5e;
   text-decoration: none;
 }
 
@@ -161,7 +161,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(94, 94, 94, 0.9);
 }
 
 #header.header-top .social-links,
@@ -305,7 +305,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(94, 94, 94, 0.9);
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -366,7 +366,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(94, 94, 94, 0.9);
   padding: 30px;
 }
 
@@ -768,7 +768,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #5e5e5e;
 }
 
 .services .icon-box:hover h4 a,
@@ -1201,4 +1201,8 @@ section .container {
 .carTour {
   color:#fedf62;
   vertical-align: middle;
+}
+.zee {
+  font-style: italic;
+  color:#fedf62;
 }
