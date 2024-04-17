@@ -1204,5 +1204,5 @@ section .container {
 }
 .zee {
   font-style: italic;
-  color:#fedf62;
+  color:#fedf62 !important;
 }
